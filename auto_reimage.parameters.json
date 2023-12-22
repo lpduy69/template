@@ -1,0 +1,213 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "hciArtifactsLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/HCIScripts_1.0.02544.255/HciCustomScript.ps1"
+        },
+        "customLocationId": {
+            "value": ""
+        },
+        "virtualProcessorCount": {
+            "value": null
+        },
+        "memoryMB": {
+            "value": 0
+        },
+        "maximumMemoryMB": {
+            "value": 0
+        },
+        "minimumMemoryMB": {
+            "value": 0
+        },
+        "dynamicMemoryConfig": {
+            "value": false
+        },
+        "vmInfrastructureType": {
+            "value": "Cloud"
+        },
+        "artifactsLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration_1.0.02544.255.zip"
+        },
+        "nestedTemplatesLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/armtemplates/Hostpool_1.0.02544.255/nestedTemplates/"
+        },
+        "hostpoolName": {
+            "value": "ZTSCDesktopPool"
+        },
+        "hostpoolProperties": {
+            "value": {
+                "agentUpdate": null,
+                "friendlyName": null,
+                "description": "Created through the Azure Virtual Desktop extension",
+                "hostPoolType": "Personal",
+                "personalDesktopAssignmentType": "Automatic",
+                "applicationGroupReferences": [
+                    "/subscriptions/b643fd86-d448-48bc-9abd-a6c0c96c9a60/resourcegroups/ZTCSAccessGroup/providers/Microsoft.DesktopVirtualization/applicationgroups/ZTSCDesktopPool-DAG"
+                ],
+                "customRdpProperty": "drivestoredirect:s:*;audiomode:i:0;videoplaybackmode:i:1;redirectclipboard:i:1;redirectprinters:i:1;devicestoredirect:s:*;redirectcomports:i:1;redirectsmartcards:i:1;usbdevicestoredirect:s:*;enablecredsspsupport:i:1;redirectwebauthn:i:1;use multimon:i:1;targetisaadjoined:i:1;enablerdsaadauth:i:1;",
+                "maxSessionLimit": 999999,
+                "loadBalancerType": "Persistent",
+                "validationEnvironment": false,
+                "ring": null,
+                "registrationInfo": null,
+                "vmTemplate": "{\"domain\":\"\",\"galleryImageOffer\":null,\"galleryImagePublisher\":null,\"galleryImageSKU\":null,\"imageType\":\"CustomImage\",\"customImageId\":\"/subscriptions/b643fd86-d448-48bc-9abd-a6c0c96c9a60/resourceGroups/ZTCSAccessGroup/providers/Microsoft.Compute/galleries/ZTCSProdGallery/images/access-jmp-defi/versions/1.0.1\",\"namePrefix\":\"ZTCSJMP2208\",\"osDiskType\":\"Standard_LRS\",\"vmSize\":{\"id\":\"Standard_D4as_v4\",\"cores\":4,\"ram\":16,\"rdmaEnabled\":false,\"supportsMemoryPreservingMaintenance\":true},\"galleryItemId\":null,\"hibernate\":false,\"diskSizeGB\":0,\"securityType\":\"TrustedLaunch\",\"secureBoot\":true,\"vTPM\":true,\"vmInfrastructureType\":\"Cloud\",\"virtualProcessorCount\":null,\"memoryGB\":null,\"maximumMemoryGB\":null,\"minimumMemoryGB\":null,\"dynamicMemoryConfig\":false}",
+                "preferredAppGroupType": "Desktop",
+                "migrationRequest": null,
+                "cloudPcResource": false,
+                "startVMOnConnect": false,
+                "ssoadfsAuthority": null,
+                "ssoClientId": null,
+                "ssoClientSecretKeyVaultPath": null,
+                "ssoSecretType": null,
+                "objectId": "eeff8070-8e36-4998-85e0-5bb42122d858"
+            }
+        },
+        "hostpoolResourceGroup": {
+            "value": "ZTCSAccessGroup"
+        },
+        "hostpoolLocation": {
+            "value": "westus2"
+        },
+        "hostpoolToken": {
+            "value": null
+        },
+        "vmInitialNumber": {
+            "value": 0
+        },
+        "vmResourceGroup": {
+            "value": "ZTCSAccessGroup"
+        },
+        "vmLocation": {
+            "value": "westus2"
+        },
+        "vmNamePrefix": {
+            "value": null
+        },
+        "vmNumberOfInstances": {
+            "value": 2
+        },
+        "vmSize": {
+            "value": "Standard_D4as_v4"
+        },
+        "vmDiskType": {
+            "value": "Standard_LRS"
+        },
+        "vmDiskSizeGB": {
+            "value": 0
+        },
+        "vmHibernate": {
+            "value": false
+        },
+        "availabilityOption": {
+            "value": "None"
+        },
+        "availabilitySetName": {
+            "value": ""
+        },
+        "createAvailabilitySet": {
+            "value": false
+        },
+        "availabilitySetUpdateDomainCount": {
+            "value": 5
+        },
+        "availabilitySetFaultDomainCount": {
+            "value": 2
+        },
+        "availabilityZones": {
+            "value": []
+        },
+        "securityType": {
+            "value": "TrustedLaunch"
+        },
+        "secureBoot": {
+            "value": true
+        },
+        "vTPM": {
+            "value": true
+        },
+        "managedDiskSecurityEncryptionType": {
+            "value": "VMGuestStateOnly"
+        },
+        "integrityMonitoring": {
+            "value": true
+        },
+        "vmImageType": {
+            "value": "CustomImage"
+        },
+        "bootDiagnostics": {
+            "value": {
+                "enabled": true
+            }
+        },
+        "customConfigurationScriptUrl": {
+            "value": ""
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "ZTCSAccessGroup"
+        },
+        "existingVnetName": {
+            "value": "ZTCSAccessVNet"
+        },
+        "existingSubnetName": {
+            "value": "default"
+        },
+        "createNetworkSecurityGroup": {
+            "value": false
+        },
+        "aadJoin": {
+            "value": true
+        },
+        "intune": {
+            "value": false
+        },
+        "domain": {
+            "value": ""
+        },
+        "ouPath": {
+            "value": ""
+        },
+        "vmAdministratorAccountUsername": {
+            "value": null
+        },
+        "vmAdministratorAccountPassword": {
+            "value": null
+        },
+        "networkInterfaceTags": {
+            "value": {
+                "cm-resource-parent": "/subscriptions/b643fd86-d448-48bc-9abd-a6c0c96c9a60/resourcegroups/ZTCSAccessGroup/providers/Microsoft.DesktopVirtualization/hostpools/ZTSCDesktopPool"
+            }
+        },
+        "networkSecurityGroupTags": {
+            "value": {
+                "cm-resource-parent": "/subscriptions/b643fd86-d448-48bc-9abd-a6c0c96c9a60/resourcegroups/ZTCSAccessGroup/providers/Microsoft.DesktopVirtualization/hostpools/ZTSCDesktopPool"
+            }
+        },
+        "availabilitySetTags": {
+            "value": {
+                "cm-resource-parent": "/subscriptions/b643fd86-d448-48bc-9abd-a6c0c96c9a60/resourceGroups/ZTCSAccessGroup/providers/Microsoft.DesktopVirtualization/hostpools/ZTSCDesktopPool"
+            }
+        },
+        "virtualMachineTags": {
+            "value": {
+                "cm-resource-parent": "/subscriptions/b643fd86-d448-48bc-9abd-a6c0c96c9a60/resourceGroups/ZTCSAccessGroup/providers/Microsoft.DesktopVirtualization/hostpools/ZTSCDesktopPool"
+            }
+        },
+        "deploymentId": {
+            "value": "cd72f419-691a-442b-8e22-516db81770c9"
+        },
+        "apiVersion": {
+            "value": "2022-10-14-preview"
+        },
+        "vmCustomImageSourceId": {
+            "value": "/subscriptions/b643fd86-d448-48bc-9abd-a6c0c96c9a60/resourceGroups/ZTCSAccessGroup/providers/Microsoft.Compute/galleries/ZTCSProdGallery/images/access-jmp-defi/versions/1.0.1"
+        },
+        "systemData": {
+            "value": {
+                "aadJoinPreview": false,
+                "sessionHostConfigurationVersion": "",
+                "firstPartyExtension": false
+            }
+        }
+    }
+}
